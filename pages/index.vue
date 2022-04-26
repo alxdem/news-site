@@ -1,13 +1,18 @@
 <template>
   <div>
     <NuxtLink to='/about'>About</NuxtLink>
-    <Tutorial />
+    About page
   </div>
 </template>
 
 <script>
 export default {
   name: 'IndexPage',
+  data() {
+    return {
+      title: 'My Main Page',
+    }
+  },
   head() {
     return {
       title: this.title,
@@ -20,10 +25,5 @@ export default {
       ]
     }
   },
-  data() {
-    return {
-      title: 'My Main Page',
-    }
-  }
 }
 </script>
