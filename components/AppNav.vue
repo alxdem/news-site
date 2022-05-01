@@ -19,15 +19,19 @@
 </template>
 
 <script>
+import { throttle } from '@/plugins/utils.js'
+
 export default {
   name: 'AppNav',
+  THROTTLED_TIME: 300,
+  THROTTLE_ACCENT_SET: null,
   props: {
     items: {
       type: Array,
       default() {
         return [
           { anchor: 'Home', url: '/' },
-          { anchor: 'News', url: '/4' },
+          { anchor: 'News', url: '/about' },
           { anchor: 'Showbiz & TV', url: '/2' },
           { anchor: 'Sport', url: '/7' },
           { anchor: 'Comment', url: '/6' },
@@ -39,30 +43,61 @@ export default {
       }
     }
   },
+  data() {
+    return {
+      activeLink: null
+    }
+  },
+  watch: {
+    async $route() {
+      await this.$nextTick()
+      this.activeLink = document.querySelector('.nav__link.nuxt-link-exact-active')
+      this.accentSet(this.activeLink)
+    }
+  },
+  mounted() {
+    this.activeLink = document.querySelector('.nav__link.nuxt-link-exact-active')
+    this.accentSet(this.activeLink)
+    window.addEventListener('mouseover', this.mouseover);
+    this.$options.THROTTLE_ACCENT_SET = throttle(this.accentSetToCurrentItem, this.$options.THROTTLED_TIME);
+  },
   methods: {
     hover(e) {
-      const target = e.target;
-      this.accentSet(target);
+      const target = e.target
+      this.accentSet(target)
     },
     accentSet(element) {
-      const linkText = element.querySelector('.nav__text');
+      if (!element) return
 
-      if (!linkText) return;
+      const linkText = element.querySelector('.nav__text')
 
-      const box = linkText.getBoundingClientRect();
-      const leftValue = box.left;
-      const elementWidth = linkText.offsetWidth;
+      if (!linkText) return
+
+      const box = linkText.getBoundingClientRect()
+      const leftValue = box.left
+      const elementWidth = linkText.offsetWidth
 
       Object.assign(this.$refs.accent.style, {
         width: `${elementWidth}px`,
-        transform: `translateX(${leftValue}px)`,
-      });
+        transform: `translateX(${leftValue}px)`
+      })
     },
-  },
-  mounted() {
-    const activeLink = document.querySelector('.nav__link.nuxt-link-active');
-    this.accentSet(activeLink);
-  },
+    mouseover(e) {
+      this.$options.THROTTLE_ACCENT_SET(e);
+    },
+
+    accentSetToCurrentItem(e) {
+      const target = e.target
+      const prevElement = e.fromElement
+      const isNotNav = !target.classList.contains('nav__link') && !target.closest('.nav__link')
+
+      if (!prevElement) return
+
+      if (isNotNav) {
+        this.accentSet(this.activeLink)
+      }
+    },
+  }
 }
 </script>
 
@@ -96,8 +131,12 @@ export default {
     padding: 0 25px 16px;
     text-decoration: none;
 
-    &.nuxt-link-active {
+    &.nuxt-link-exact-active {
       color: $red;
+    }
+
+    & > * {
+      pointer-events: none;
     }
   }
 }
