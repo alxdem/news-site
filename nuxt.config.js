@@ -46,12 +46,24 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxt/image',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    // baseURL: '/',
+    baseURL: process.env.API_URL,
+    // baseURL: "http://localhost:3000",
+    // browserBaseURL: "http://localhost:3000",
+  },
+
+  image: {
+    screens: {
+      sm: 460,
+      md: 768,
+      lg: 1024,
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
