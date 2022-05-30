@@ -1,3 +1,8 @@
+const lg = 1024;
+const md = 992;
+const sm = 768;
+const xsm = 480;
+
 function throttle(functionName, ms) {
   let isThrottled = false;
   let savedArgs;
@@ -28,5 +33,9 @@ function throttle(functionName, ms) {
 }
 
 export {
+  lg,
+  md,
+  sm,
+  xsm,
   throttle,
 }

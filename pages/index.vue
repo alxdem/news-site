@@ -1,14 +1,8 @@
 <template>
-  <div>
-    <div class='wrapper'>
-      <NuxtLink to='/about'>About</NuxtLink>
-      About page
-
-      <category-main
-        title='Trending on Daily Express'
-        :items='posts'
-      />
-    </div>
+  <div class='wrapper'>
+    <category-main
+      :items='posts'
+    />
   </div>
 </template>
 
@@ -17,15 +11,21 @@ import CategoryMain from '../components/CategoryMain'
 export default {
   name: 'IndexPage',
   components: { CategoryMain },
-  // async asyncData({$axios}) {
-  //   const { data } = await $axios.get('TrendingNewsAPI', {
-  //     headers: {
-  //       'X-RapidAPI-Key': '1b48a3c919mshd9383fb1796ecdep113439jsn4b8e4d110369'
-  //     }
-  //   });
-  //
-  //   return {posts: data.value};
-  // },
+  async asyncData({$axios}) {
+    // const { data } = await $axios.get('TrendingNewsAPI', {
+    //   headers: {
+    //     'X-RapidAPI-Key': '1b48a3c919mshd9383fb1796ecdep113439jsn4b8e4d110369'
+    //   }
+    // });
+
+    // const data = await $axios.get('http://localhost:3000/data/popular/all.json');
+    // const data = await $axios.get('/data/popular/all.json');
+
+    const raw = await fetch('http://localhost:3000/data/popular/all.json');
+    const data = await raw.json();
+
+    return {posts: data.result.items || []};
+  },
   data() {
     return {
       title: 'My Main Page',

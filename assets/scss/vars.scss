@@ -3,11 +3,23 @@ $ff-base: 'SFProDisplay', 'Helvetica Neue', sans-serif;
 $ff-title: 'IBMPlex', serif;
 
 // Colors
-$white: #F6F6F6;
+$white: #FFFFFF;
 $black: #231F20;
 
+$gray__100: #F7F7F7;
 $gray__300: #E1E1E1;
 $gray__500: #AFAFAF;
 $gray__700: #8C8C8C;
 
 $red: #B5001D;
+
+// Transitions
+$easing: ease-out;
+$timing: 0.3s;
+
+// Media Queries
+$xl: 'max-width: 1280px';
+$lg: 'max-width: 1024px';
+$md: 'max-width: 992px';
+$sm: 'max-width: 768px';
+$xsm: 'max-width: 480px';

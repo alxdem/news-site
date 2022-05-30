@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { throttle } from '@/plugins/utils.js'
+import { throttle } from '@/plugins/utils';
 
 export default {
   name: 'AppNav',
@@ -106,6 +106,10 @@ export default {
   position: relative;
   border-bottom: 1px solid $gray__300;
 
+  @media($lg) {
+    overflow: hidden;
+  }
+
   &__accent {
     position: absolute;
     height: 2px;
@@ -115,6 +119,10 @@ export default {
     bottom: -2px;
     transform: translateX(0);
     transition: all ease-in 0.25s;
+
+    @media (hover: none) {
+      display: none;
+    }
   }
 
   &__inner {
@@ -131,6 +139,10 @@ export default {
     color: $gray__700;
     padding: 0 25px 16px;
     text-decoration: none;
+
+    @media($lg) {
+      font-size: 16px;
+    }
 
     &.nuxt-link-exact-active {
       color: $red;

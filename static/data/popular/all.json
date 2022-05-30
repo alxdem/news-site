@@ -1,0 +1,86 @@
+{
+  "result": {
+    "items": [
+      {
+        "url": "/trump-play",
+        "images": "/pics/1.jpg",
+        "title": "This Trump Play in London Is a Comedy. Unless You’re American",
+        "text": "Mike Bartlett’s “The 47th” presents political turmoil in the United States for laughs. But some find it more like a horror story.",
+        "date": "Mar 26, 2022",
+        "category": "politics"
+      },
+      {
+        "url": "/bob-dylan-center",
+        "images": "/pics/2.jpg",
+        "title": "The $10 Million Bob Dylan Center Opens Up His Songwriting Secrets",
+        "text": "A new space in Tulsa, Okla., celebrates one of the world’s most elusive creators, and gives visitors a close-up look at notebooks and fan mail.",
+        "date": "May 2, 2022",
+        "category": "history"
+      },
+      {
+        "url": "/priti-patel-migration",
+        "images": "/pics/3.jpg",
+        "title": "Priti Patel migration plan 'set for remarkable results' - new study lays bare huge impact",
+        "text": "BRITAIN'S new controversial asylum deal with Rwanda could reduce the number of people making",
+        "date": "Mar 20, 2022",
+        "category": "law"
+      },
+      {
+        "url": "/biden-is-an-unlikely",
+        "images": "/pics/4.jpg",
+        "title": "With Roe Under Threat, Biden Is an Unlikely Abortion Rights Champion",
+        "text": "Over the course of a half-century in national politics, President Biden has evolved from an outright critic of Roe to a seemingly reluctant and largely quiet supporter.",
+        "date": "Mar 8, 2022",
+        "category": "politics"
+      },
+      {
+        "url": "/ricardo-alarcon-diplomat",
+        "images": "/pics/5.jpg",
+        "title": "Ricardo Alarcon, Diplomat and Castro Confidant, Dies at 84",
+        "text": "As Havana’s go-between with the U.S., he negotiated Elián González’s return to Cuba. He was also the country’s U.N. representative on two occasions.",
+        "date": "Feb 26, 2022",
+        "category": "history"
+      },
+      {
+        "url": "/india-finds-russian-oil",
+        "images": "/pics/6.jpg",
+        "title": "India Finds Russian Oil an Irresistible Deal, No Matter the Diplomatic Pressure",
+        "text": "A parade of emissaries have urged a harder line on Russia. But India’s political neutrality over the war in Ukraine has expanded into economic opportunism.",
+        "date": "Feb 23, 2022",
+        "category": "business"
+      },
+      {
+        "url": "/animal-virus",
+        "images": "/pics/7.jpg",
+        "title": "Signs of an Animal Virus Discovered in Man Who Received a Pig’s Heart",
+        "text": "The patient showed no sign of rejecting the genetically modified organ, but suffered numerous complications.",
+        "date": "Feb 19, 2022",
+        "category": "health"
+      },
+      {
+        "url": "/state-abortion",
+        "images": "/pics/8.jpg",
+        "title": "State abortion restrictions may jeopardize women with high-risk pregnancies, some doctors fear.",
+        "text": "The patient showed no sign of rejecting the genetically modified organ, but suffered numerous complications.",
+        "date": "Feb 19, 2022",
+        "category": "law"
+      },
+      {
+        "url": "/abortion-pills",
+        "images": "/pics/9.jpg",
+        "title": "Abortion Pills Stand to Become the Next Battleground in a Post-Roe America",
+        "text": "Medication abortion allows patients to terminate early pregnancies at home. Some states are moving to limit it, while others are working to expand access.",
+        "date": "Feb 18, 2022",
+        "category": "health"
+      },
+      {
+        "url": "/diego-maradona",
+        "images": "/pics/10.jpg",
+        "title": "Diego Maradona’s ‘Hand of God’ Jersey Sells for $9.3 Million",
+        "text": "The shirt worn by the Argentine soccer star when he scored two fabled goals, one of which he attributed to divine aid, fetched what is believed to be the highest price ever paid for a sports item.",
+        "date": "Feb 15, 2022",
+        "category": "sports"
+      }
+    ]
+  }
+}

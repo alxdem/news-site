@@ -1,0 +1,30 @@
+{
+  "result": {
+    "items": [
+      {
+        "url": "/cdc",
+        "images": "/pics/17.jpg",
+        "title": "C.D.C. Is Investigating 109 Cases of Hepatitis in Children, Including 5 Deaths",
+        "text": "The agency stressed that the disease was still very rare in children and that a cause had not been determined.",
+        "date": "May 5, 2022",
+        "category": "health"
+      },
+      {
+        "url": "/death-toll",
+        "images": "/pics/18.jpg",
+        "title": "Death Toll During Pandemic Far Exceeds Totals Reported by Countries, W.H.O. Says",
+        "text": "Nearly 15 million more people died during the first two years of the pandemic than would have been expected during normal times, the organization found. The previous count of virus deaths, from countries’ reporting, was six million.",
+        "date": "May 3, 2022",
+        "category": "health"
+      },
+      {
+        "url": "/abortion-pills",
+        "images": "/pics/19.jpg",
+        "title": "Abortion Pills Stand to Become the Next Battleground in a Post-Roe America",
+        "text": "Medication abortion allows patients to terminate early pregnancies at home. Some states are moving to limit it, while others are working to expand access.",
+        "date": "Apr 29, 2022",
+        "category": "health"
+      }
+    ]
+  }
+}
