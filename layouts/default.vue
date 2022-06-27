@@ -1,5 +1,5 @@
 <script>
-import { md, sm } from '../plugins/utils'
+import { md, sm } from '../plugins/utils';
 
 export default {
   name: 'LayoutDefault',
