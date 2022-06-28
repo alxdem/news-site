@@ -6,6 +6,12 @@ function chatInit() {
   setTimeout(function() {
     const webComponent = document.createElement('APP-CHAT');
     body.appendChild(webComponent);
+    webComponent.style.cssText = `
+      position: fixed;
+      z-index: 100;
+      right: 15px;
+      bottom: 15px;
+    `;
     customElements.define('app-chat', AppChat);
   }, 100);
 }
@@ -85,9 +91,7 @@ class AppChat extends HTMLElement {
 
     style.textContent = `
       .wrapper {
-        position: fixed;
-        right: 15px;
-        bottom: 15px;
+        position: relative;
       }
 
       .btn {
