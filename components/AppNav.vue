@@ -32,13 +32,9 @@ export default {
         return [
           { anchor: 'Home', url: '/' },
           { anchor: 'News', url: '/about' },
-          { anchor: 'Showbiz & TV', url: '/2' },
-          { anchor: 'Sport', url: '/7' },
-          { anchor: 'Comment', url: '/6' },
-          { anchor: 'Finance', url: '/5' },
-          { anchor: 'Travel', url: '/4' },
-          { anchor: 'Entertainment', url: '/3' },
-          { anchor: 'Life & Style', url: '/3' }
+          { anchor: 'Test', url: '/4' },
+          { anchor: 'Test', url: '/3' },
+          { anchor: 'Test', url: '/3' }
         ]
       }
     }
@@ -77,10 +73,12 @@ export default {
       const leftValue = box.left
       const elementWidth = linkText.offsetWidth
 
-      Object.assign(this.$refs.accent.style, {
-        width: `${elementWidth}px`,
-        transform: `translateX(${leftValue}px)`
-      })
+      if (this.$refs.accent) {
+        Object.assign(this.$refs.accent.style, {
+          width: `${elementWidth}px`,
+          transform: `translateX(${leftValue}px)`
+        })
+      }
     },
     mouseover(e) {
       this.$options.THROTTLE_ACCENT_SET(e);

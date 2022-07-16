@@ -126,7 +126,7 @@ export default {
       height: 26vw;
     }
 
-    @media ($xsm) {
+    @media ($xs) {
       width: 100%;
       margin: 0 0 15px;
       height: 51vw;

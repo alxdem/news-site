@@ -18,18 +18,18 @@
           <nuxt-img
             src='/images/logo.png'
             alt='Daily Express'
-            sizes='xsm:120px md:250px xl:300px'
+            sizes='xs:120px md:250px xl:300px'
             class='header__logo-image'
           />
         </NuxtLink>
 
         <div class='header__main-right'>
-          <button
+          <div
             v-if='!isDesktop'
-            type='button'
             class='header__burger'
-            @click='burgerBtnClick'
-          ></button>
+          >
+            <btn-mob-nav-close/>
+          </div>
         </div>
       </div>
     </div>
@@ -38,35 +38,21 @@
       v-if='isDesktop'
       class='header__nav'
     >
-      <app-nav/>
-    </div>
-
-    <div
-      v-if='isMobNavActive'
-      class='header__nav-mob'
-    >
-      fdsfsdf<br/>
-      fdsfsdf<br/>
-      fdsfsdf<br/>
-      fdsfsdf<br/>
+      <app-nav :items='navItems'/>
     </div>
   </header>
 </template>
 
 <script>
 import AppNav from './AppNav'
+import BtnMobNavClose from './BtnMobNavClose'
 export default {
   name: 'AppHeader',
-  components: { AppNav },
+  components: { AppNav, BtnMobNavClose },
   props: {
     navItems: {
       type: Array,
       default: () => [],
-    }
-  },
-  data() {
-    return {
-      isMobNavActive: false,
     }
   },
   computed: {
@@ -74,15 +60,10 @@ export default {
       return this.$store.state.media.isDesktop;
     }
   },
-  methods: {
-    burgerBtnClick() {
-      this.isMobNavActive = !this.isMobNavActive;
-    }
-  },
 }
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
   .header {
     padding: 60px 0 0;
     margin-bottom: 65px;
@@ -95,8 +76,9 @@ export default {
       padding: 5.5vw 0 0;
     }
 
-    @media ($xsm) {
-      padding: 38px 0 0;
+    @media ($xs) {
+      padding: 0;
+      margin-bottom: 0;
     }
 
     &__main-wrapper {
@@ -142,7 +124,7 @@ export default {
         width: 250px;
       }
 
-      @media ($xsm) {
+      @media ($xs) {
         width: 120px;
       }
     }
@@ -156,27 +138,14 @@ export default {
     }
 
     &__burger {
-      @include reset-button;
       position: relative;
       width: 40px;
       height: 36px;
 
-      &:before,
-      &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        height: 1px;
-        width: 100%;
-        background-color: $black;
-      }
-
-      &:before {
-        top: 8px;
-      }
-
-      &:after {
-        bottom: 8px;
+      @media ($xs) {
+        width: 50px;
+        height: 50px;
+        margin-right: -10px;
       }
     }
   }

@@ -61,7 +61,7 @@ export default {
   height: 100%;
   text-decoration: none;
 
-  @media ($xsm) {
+  @media ($xs) {
     display: block;
   }
 
@@ -81,7 +81,7 @@ export default {
       width: 48.6%;
     }
 
-    @media ($xsm) {
+    @media ($xs) {
       width: 100%;
       height: 73vw;
     }
@@ -108,7 +108,7 @@ export default {
       padding: 30px 20px;
     }
 
-    @media ($xsm) {
+    @media ($xs) {
       padding: 16px 10px;
       background-color: $white;
     }
@@ -150,7 +150,7 @@ export default {
     margin-top: 26px;
     overflow: hidden;
 
-    @media ($xsm) {
+    @media ($xs) {
       margin-top: 10px;
     }
   }
@@ -162,7 +162,7 @@ export default {
     font-weight: 500;
     margin-top: auto;
 
-    @media ($xsm) {
+    @media ($xs) {
       font-size: 12px;
       line-height: 12px;
     }

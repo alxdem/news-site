@@ -3,6 +3,14 @@ import { md, sm } from '../plugins/utils';
 
 export default {
   name: 'LayoutDefault',
+  data() {
+    return {
+      navItems: [],
+    }
+  },
+  created() {
+    this.navGetData();
+  },
   mounted() {
     this.mediaSet();
     window.addEventListener('resize', this.resize);
@@ -18,7 +26,11 @@ export default {
         this.$store.commit('media/tabletActive');
       } else {
         this.$store.commit('media/desktopActive');
+        this.$store.commit('nav/switchActive', false);
       }
+    },
+    async navGetData() {
+      this.navItems = await this.$axios.$get('/data/nav.json');
     },
     resize() {
       this.mediaSet();
@@ -29,7 +41,8 @@ export default {
 
 <template>
   <div>
-    <app-header />
+    <app-header :nav-items='navItems' />
     <Nuxt />
+    <app-nav-mob :items='navItems'/>
   </div>
 </template>
