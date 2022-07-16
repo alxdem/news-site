@@ -1,7 +1,7 @@
 const lg = 1024;
 const md = 992;
 const sm = 768;
-const xsm = 480;
+const xs = 480;
 
 function throttle(functionName, ms) {
   let isThrottled = false;
@@ -36,6 +36,6 @@ export {
   lg,
   md,
   sm,
-  xsm,
+  xs,
   throttle,
 }

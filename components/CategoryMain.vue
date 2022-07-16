@@ -85,7 +85,7 @@
 </template>
 
 <script>
-  import { md, sm, xsm } from '../plugins/utils';
+  import { md, sm, xs } from '../plugins/utils';
 import CardNewsMain from './CardNewsMain'
 import CardNews from './CardNews'
 export default {
@@ -114,7 +114,7 @@ export default {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          [`${xsm}`]: {
+          [`${xs}`]: {
             slidesPerView: 'auto',
             spaceBetween: 10,
           },
@@ -141,7 +141,7 @@ export default {
 <style lang='scss'>
   .category-main {
     &__tablet {
-      @media ($xsm) {
+      @media ($xs) {
         margin-left: -10px;
         margin-right: -10px;
       }
@@ -215,7 +215,7 @@ export default {
         grid-area: j;
       }
 
-      @media ($xsm) {
+      @media ($xs) {
         width: 70vw;
       }
     }
@@ -235,7 +235,7 @@ export default {
     }
 
     &__slider-wrapper {
-      @media ($xsm) {
+      @media ($xs) {
         padding: 0 10px;
       }
     }

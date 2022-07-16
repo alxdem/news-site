@@ -24,7 +24,9 @@ export default {
     const raw = await fetch('http://localhost:3000/data/popular/all.json');
     const data = await raw.json();
 
-    return {posts: data.result.items || []};
+    return {
+      posts: data.result.items || [],
+    };
   },
   data() {
     return {

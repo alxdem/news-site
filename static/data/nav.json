@@ -2,5 +2,37 @@
   {
     "anchor": "Home",
     "url": "/"
+  },
+  {
+    "anchor": "News",
+    "url": "/about"
+  },
+  {
+    "anchor": "Showbiz & TV",
+    "url": "/2"
+  },
+  {
+    "anchor": "Sport",
+    "url": "/7"
+  },
+  {
+    "anchor": "Comment",
+    "url": "/6"
+  },
+  {
+    "anchor": "Finance",
+    "url": "/6"
+  },
+  {
+    "anchor": "Travel",
+    "url": "/6"
+  },
+  {
+    "anchor": "Entertainment",
+    "url": "/6"
+  },
+  {
+    "anchor": "Life & Style",
+    "url": "/6"
   }
 ]
