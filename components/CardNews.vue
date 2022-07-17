@@ -6,7 +6,7 @@
     :class='["card-news", indexClassSet, typeClassSet]'
   >
     <div class='card-news__photo'>
-      <nuxt-img
+      <NuxtImg
         v-if='image'
         :src='image'
         :alt='title'

@@ -4,7 +4,7 @@
       v-if='isTablet'
       class='category-main__tablet'
     >
-      <card-news-main
+      <CardNewsMain
         v-if='items[0]'
         :title='items[0].title'
         :text='items[0].text'
@@ -27,7 +27,7 @@
               class='category-main__item swiper-slide'
               :class='`category-main__item_${index}`'
             >
-              <card-news
+              <CardNews
                 :title='item.title'
                 :url='item.url'
                 :image='item.images'
@@ -50,7 +50,7 @@
         class='category-main__item'
         :class='`category-main__item_${index}`'
       >
-        <card-news-main
+        <CardNewsMain
           v-if='index === 0'
           :title='item.title'
           :text='item.text'
@@ -60,7 +60,7 @@
           :category='item.category'
         />
 
-        <card-news
+        <CardNews
           v-if='index >= 1 && index <= 3'
           :title='item.title'
           :url='item.url'
@@ -70,7 +70,7 @@
           :index-number='index'
         />
 
-        <card-news
+        <CardNews
           v-if='index >= 4 && index <= 9'
           :title='item.title'
           :url='item.url'

@@ -1,7 +1,7 @@
 <template>
   <a :href='url' class='card-news-main'>
     <div class='card-news-main__photo'>
-      <nuxt-img
+      <NuxtImg
         v-if='image'
         :src='image'
         :alt='title'

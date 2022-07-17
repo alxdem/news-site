@@ -1,6 +1,6 @@
 <template>
   <div class='wrapper'>
-    <category-main
+    <CategoryMain
       :items='posts'
     />
   </div>

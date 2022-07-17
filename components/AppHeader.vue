@@ -15,7 +15,7 @@
         </div>
 
         <NuxtLink to='/' class='header__logo'>
-          <nuxt-img
+          <NuxtImg
             src='/images/logo.png'
             alt='Daily Express'
             sizes='xs:120px md:250px xl:300px'
@@ -28,7 +28,7 @@
             v-if='!isDesktop'
             class='header__burger'
           >
-            <btn-mob-nav-close/>
+            <BtnMobNavClose/>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
       v-if='isDesktop'
       class='header__nav'
     >
-      <app-nav :items='navItems'/>
+      <AppNav :items='navItems'/>
     </div>
   </header>
 </template>
