@@ -1,3 +1,11 @@
+<template>
+  <div>
+    <AppHeader :nav-items='navItems' />
+    <Nuxt />
+    <AppNavMob :items='navItems'/>
+  </div>
+</template>
+
 <script>
 import { md, sm } from '../plugins/utils';
 
@@ -63,11 +71,3 @@ export default {
   }
 }
 </script>
-
-<template>
-  <div>
-    <app-header :nav-items='navItems' />
-    <Nuxt />
-    <app-nav-mob :items='navItems'/>
-  </div>
-</template>

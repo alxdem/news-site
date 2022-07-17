@@ -5,7 +5,7 @@
   >
     <div class='nav-mob__inner'>
       <NuxtLink to='/' class='nav-mob__logo'>
-        <nuxt-img
+        <NuxtImg
           src='/images/logo.png'
           alt='Daily Express'
           sizes='xs:120px md:250px xl:300px'
@@ -24,7 +24,7 @@
     </div>
 
     <div class='nav-mob__close'>
-      <btn-mob-nav-close/>
+      <BtnMobNavClose/>
     </div>
 
     <div class='nav-mob__bg' @click='close'></div>
