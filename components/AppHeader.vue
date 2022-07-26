@@ -108,6 +108,12 @@ export default {
       margin-left: 50px;
     }
 
+    &__info-temperature {
+      display: flex;
+      align-items: center;
+      margin-left: 8px;
+    }
+
     &__logo {
       display: block;
       margin: 0 auto;

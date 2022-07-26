@@ -1,0 +1,397 @@
+{
+  "result": {
+    "entertainment": {
+      "title": "Entertainment",
+      "items": [
+        {
+          "anchor": "Films",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Gaming",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Music",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Books",
+          "url": "/"
+        },
+        {
+          "anchor": "Theater",
+          "url": "/"
+        }
+      ]
+    },
+    "sport": {
+      "title": "Sport",
+      "items": [
+        {
+          "anchor": "Football",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Transfer news",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Premier League",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Liverpool",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Arsenal",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Chelsea",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Manchester United",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "West Ham",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Everton",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Celtic",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Rangers",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Tennis",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "F1",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "UFC",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "WWE",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Golf",
+          "url": "/",
+          "isExternal": true
+        }
+      ]
+    },
+    "pictures": {
+      "title": "Pictures",
+      "items": [
+        {
+          "anchor": "Celebrity Galleries",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Royal Galleries",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Sport Galleries",
+          "url": "/",
+          "isExternal": true
+        }
+      ]
+    },
+    "comment": {
+      "title": "Comment",
+      "items": [
+        {
+          "anchor": "Columnists",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Express Comment",
+          "url": "/",
+          "isExternal": false
+        }
+      ]
+    },
+    "finance": {
+      "title": "Finance",
+      "items": [
+        {
+          "anchor": "City & Business",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Personal Finance",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "The Crusader",
+          "url": "/",
+          "isExternal": true
+        }
+      ]
+    },
+    "travel": {
+      "title": "Travel",
+      "items": [
+        {
+          "anchor": "Activity Holidays",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Travel News",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Beach Holidays",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Short & City breaks",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Cruise",
+          "url": "/",
+          "isExternal": true
+        }
+      ]
+    },
+    "life": {
+      "title": "life & style",
+      "items": [
+        {
+          "anchor": "Life",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Style",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Health",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Cars",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Property",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Food",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Tech",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Diets",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Garden",
+          "url": "/",
+          "isExternal": true
+        }
+      ]
+    },
+    "showbiz": {
+      "title": "showbiz & TV",
+      "items": [
+        {
+          "anchor": "Celebrity News",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "TV & Radio",
+          "url": "/",
+          "isExternal": false
+        }
+      ]
+    },
+    "site": {
+      "title": "EXPRESS.CO.UK",
+      "items": [
+        {
+          "anchor": "Apps",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Puzzles",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Horoscopes",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Discounts",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Shop",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Paper",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Sitemap",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Site Archive",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "About Us",
+          "url": "/about",
+          "isExternal": false
+        },
+        {
+          "anchor": "Journalists",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "How to Complain",
+          "url": "/",
+          "isExternal": true
+        },
+        {
+          "anchor": "Report a Tech Issue",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Advertising",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Affiliate advertising",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Cookies Settings",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Privacy Policy",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Cookie Policy",
+          "url": "/",
+          "isExternal": false
+        },
+        {
+          "anchor": "Terms & Conditions",
+          "url": "/",
+          "isExternal": false
+        }
+      ]
+    },
+    "paper": {
+      "title": "Today's paper",
+      "date": "Thursday, 26th March 2020",
+      "text": "See today&rsquo;s front and back pages, download the newspaper, order back issues and use the historic Daily Express newspaper archive.",
+      "image": "/pics/paper.jpg"
+    },
+    "socials": [
+      {
+        "name": "facebook",
+        "url": "/"
+      },
+      {
+        "name": "rss",
+        "url": "/"
+      },
+      {
+        "name": "twitter",
+        "url": "/"
+      }
+    ],
+    "creators": {
+      "title": "Created by",
+      "items": [
+        {
+          "anchor": "Lada Lavrova",
+          "url": "https://www.behance.net/ladalavrov8386",
+          "isExternal": true
+        },
+        {
+          "anchor": "Alexey Demidov",
+          "url": "https://www.linkedin.com/in/demalx/",
+          "isExternal": true
+        }
+      ]
+    }
+  }
+}

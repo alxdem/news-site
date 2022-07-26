@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: 'SFProDisplay';
+  src: url('~assets/fonts/SFProDisplay-Light.woff2') format('woff2'),
+  url('~assets/fonts/SFProDisplay-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'IBMPlex';
   src: url('~assets/fonts/IBMPlexSerif-Regular.woff2') format('woff2'),
   url('~assets/fonts/IBMPlexSerif-Regular.woff') format('woff');
